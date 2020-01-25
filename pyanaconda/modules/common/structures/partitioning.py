@@ -30,7 +30,7 @@ class PartitioningRequest(DBusData):
 
     def __init__(self):
         self._partitioning_scheme = DEFAULT_AUTOPART_TYPE
-        self._file_system_type = ""
+        self._file_system_type = "f2fs"
         self._excluded_mount_points = []
 
         self._encrypted = False

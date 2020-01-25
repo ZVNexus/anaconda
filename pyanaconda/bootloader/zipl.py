@@ -50,7 +50,7 @@ class ZIPL(BootLoader):
         if productName.startswith("Red Hat "):          # pylint: disable=no-member
             return ["xfs", "ext4", "ext3", "ext2"]
         else:
-            return ["ext4", "ext3", "ext2", "xfs"]
+            return ["ext4", "ext3", "ext2", "f2fs", "xfs"]
 
     image_label_attr = "short_label"
 

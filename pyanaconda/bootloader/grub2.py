@@ -185,7 +185,7 @@ class GRUB2(BootLoader):
         if productName.startswith("Red Hat "): # pylint: disable=no-member
             return ["xfs", "ext4", "ext3", "ext2"]
         else:
-            return ["ext4", "ext3", "ext2", "btrfs", "xfs"]
+            return ["ext4", "ext3", "ext2", "btrfs", "f2fs", "xfs"]
 
     #
     # grub-related conveniences
